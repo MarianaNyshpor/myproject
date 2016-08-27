@@ -1,0 +1,9 @@
+.container{
+  display: -webkit-flex;
+  display: flex;
+}
+
+.flex-item{
+  width: 100px;
+  height: 100px;
+}

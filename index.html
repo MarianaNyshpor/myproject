@@ -3,14 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
+    <link rel="stylesheet" href="css/index.css">
 </head>
 <body>
-  <video class="bgvideo" muted autoplay="autoplay" loop="loop">
+ <div id="movie" class="container">
+  <video id="video" width="100%" hight="auto" muted autoplay="autoplay" loop="loop" preload="auto">
   <source src="video.mp4" type="video/mp4" </source>
    </video>
+   </div>
     <div>
      <h1>Ivan Nyshpor</h1>
-      <nav>
+      <nav class="flex-item">
        <ul>
         <li id="home"><a href="#">Home</a></li>
          <li><a href="#aboutme">About me</a></li>
