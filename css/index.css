@@ -1,0 +1,73 @@
+.main{
+    display:block;
+    width:100%;
+ height:100%;
+}
+#movie {
+	position: fixed;
+	top: 0; right: 0; bottom: 0; left: 0;
+	overflow: hidden;
+	z-index:-9999;
+}
+
+
+.container{
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: flex-start;
+    justify-content: flex-start;
+ width:100%;
+ height:30%;
+}
+
+.flex-item{
+ -webkit-flex:1;
+  width: 100px;
+  height: 100px;
+  margin:5px;
+}
+.flex-item{
+    -webkit-flex:1;
+            flex:1;
+     
+}
+.flex-item1 {
+  -webkit-flex: none;
+          flex: none;
+  width: 200px;
+  min-width: 100px;
+}
+.flex-item2 {
+  -webkit-flex: none;
+          flex: none;
+  width: 200px;
+  min-width: 100px;
+}
+.flex-item3 {
+  -webkit-flex: none;
+          flex: none;
+           width: 200px;
+  min-width: 100px;
+}
+.flex-item4 {
+  -webkit-flex: none;
+          flex: none;
+           width: 200px;
+  min-width: 100px;
+}
+.vertical-container {
+  height: 300px;
+  display: -webkit-flex;
+  display:         flex;
+  
+  -webkit-justify-content: center;
+          justify-content: center;
+}
+.space-container{
+  display: -webkit-flex;
+  display: flex;
+   -webkit-justify-content: space-around;
+    justify-content: space-around;
+ width:100%;
+ height:30%;
+}
