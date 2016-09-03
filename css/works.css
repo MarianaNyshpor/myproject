@@ -5,7 +5,7 @@ body{
     width: 100%;
     height: auto; 
 	top: 0; right: 0; bottom: 0; left: 0;
-    background: url("myproject/icon/image_works.jpg") repeat #220101;;
+    background: url("../icon/image_works.jpg") repeat #220101;;
     
    font-family: 'Cinzel', serif;
 font-family: 'Oswald', sans-serif;
