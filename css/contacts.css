@@ -100,8 +100,7 @@ font-weight:bold;
   display: -webkit-flex;
   display:         flex;
   
-  -webkit-justify-content: space-around;
-          justify-content: space-around;
+  justify-content:space-around;
   
 }
  #picture{
@@ -115,6 +114,8 @@ font-weight:bold;
   
   -webkit-flex: none;
           flex: none;
+           width: 200px;
+  height: 200px;
  
   min-width: 100px;
 }
@@ -155,4 +156,42 @@ a:hover {
 }
 .red{
     color:red;
+}
+.animation{
+    height: 115px;
+  width: 115px;
+  margin: 0;
+  background-color: red;
+  animation-name: stretch;
+  animation-duration: 1.5s; 
+  animation-timing-function: ease-out; 
+  animation-delay: 0;
+  animation-direction: alternate;
+  animation-iteration-count: infinite;
+  animation-fill-mode: none;
+  animation-play-state: running;
+  text-align:center;
+}
+
+@keyframes stretch {
+  0% {
+    transform: scale(.3);
+    background-color: black;
+    border-radius: 100%;
+  }
+  50% {
+    background-color: red;
+  }
+  100% {
+    transform: scale(1.5);
+    background-color: black;
+  }
+}
+input {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid red;
+    border-radius: 4px;
 }
