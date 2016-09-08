@@ -1,5 +1,4 @@
 
-
 $(function(){
   $('#btn-send').click(sendForm);  
 });

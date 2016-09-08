@@ -3,7 +3,7 @@ body{
     width: 100%;
     height: auto; 
 	top: 0; right: 0; bottom: 0; left: 0;
-    background: url("../icon/image_works.jpg") repeat #220101;
+    background: url("../icon/image_works.jpg") no-repeat black;
     
    font-family: 'Cinzel', serif;
 font-family: 'Oswald', sans-serif;
@@ -158,8 +158,8 @@ a:hover {
     color:red;
 }
 .animation{
-    height: 115px;
-  width: 115px;
+    height: 100px;
+  width: 100px;
   margin: 0;
   background-color: red;
   animation-name: stretch;
@@ -176,15 +176,16 @@ a:hover {
 @keyframes stretch {
   0% {
     transform: scale(.3);
-    background-color: black;
+    background-color: red;
     border-radius: 100%;
   }
   50% {
-    background-color: red;
+    background-color: black;
   }
   100% {
     transform: scale(1.5);
-    background-color: black;
+    background-color: red;
+    border-radius: 100%;
   }
 }
 input {
@@ -194,4 +195,38 @@ input {
     box-sizing: border-box;
     border: 2px solid red;
     border-radius: 4px;
+}
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+}
+#thanks{
+    font-size:50%;
+}
+#icon{
+    width:50px;
+ display: inline-block;
+  
+  text-align: center;
+  opacity: .7;
+}
+#icon:hover,
+#icon:focus,
+#icon:active{
+  transform: rotateY(180deg);
+  animation: two 2s infinite;
+  animation-direction: alternate;
+  
 }

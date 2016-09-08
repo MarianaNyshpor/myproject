@@ -8,7 +8,8 @@
      font-size:200%;
      font-weight:bold;
      color:#FEF0F0;
- 
+     background: black;
+
  }
  .main{
      position: fixed;
@@ -16,7 +17,6 @@
     width: 100%;
     height: auto; 
 	
-    background: url(.jpg) no-repeat #220101;
     
       
 }
@@ -146,9 +146,40 @@ a:hover {
 .red{
     color:red;
 }
+   
+
+
+
 #icon{
     width:50px;
+ display: inline-block;
+  
+  text-align: center;
+  opacity: .7;
+}
+#icon:hover,
+#icon:focus,
+#icon:active{
+  transform: rotateY(180deg);
+  animation: two 2s infinite;
+  animation-direction: alternate;
+  
 }
 
 
- 
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+}

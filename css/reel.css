@@ -15,7 +15,7 @@ body{
     height: auto; 
 	position: fixed;
 	top: 0; right: 0; bottom: 0; left: 0;
-    background: url(.jpg) no-repeat #220101;
+    background: no-repeat black;
     
       
 }
@@ -137,4 +137,35 @@ a:hover {
 }
 .red{
     color:red;
+}
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
+}
+
+.hvr-grow:hover,
+.hvr-grow:focus,
+.hvr-grow:active {
+    transform: scale(1.1);
+}
+#icon{
+    width:50px;
+ display: inline-block;
+  
+  text-align: center;
+  opacity: .7;
+}
+#icon:hover,
+#icon:focus,
+#icon:active{
+  transform: rotateY(180deg);
+  animation: two 2s infinite;
+  animation-direction: alternate;
+  
 }
