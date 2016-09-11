@@ -17,6 +17,25 @@ font-weight:bold;
     color:#FEF0F0;
    
 }
+ #page-preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    z-index: 100500;
+}
+
+#page-preloader .spinner {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 35%;
+    top: 25%;
+    background: url("../icon/loaders.gif") no-repeat 50% 50%;
+    margin: -16px 0 0 -16px;
+}
 
  .page{
     display: -webkit-flex;
@@ -161,27 +180,21 @@ a:hover {
 .hvr-grow:active {
     transform: scale(1.1);
 }
-#frame{
-    width:400;
-    height:200;
-}
- #frame:hover,
-#frame:focus,
-#frame:active{
 
-  display: inline-block;
-  
-  transform: skew(20deg);
-  
-  animation: shake 2s infinite;
-  animation-direction: alternate;
+.frame {
+    display: inline-block;
+    vertical-align: middle;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    transition-duration: 0.3s;
+    transition-property: transform;
 }
 
-@keyframes shake {
-  0% {
-    transform: rotateY(180deg);
-  }
-  100% {
-    transform: rotateY(360deg);
-  }
+.frame:hover,
+.frame:focus,
+.frame:active {
+    transform: scale(1.1);
 }
+

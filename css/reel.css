@@ -1,4 +1,10 @@
 body{
+    width: 100%;
+    height: auto; 
+	position: fixed;
+	top: 0; right: 0; bottom: 0; left: 0;
+    background: no-repeat black;
+    
      font-family: 'Cinzel', serif;
      font-family: 'Oswald', sans-serif;
      font-family: 'Rajdhani', sans-serif;
@@ -9,15 +15,24 @@ body{
      color:#FEF0F0;
  
  }
- .main{
-    
-    width: 100%;
-    height: auto; 
-	position: fixed;
-	top: 0; right: 0; bottom: 0; left: 0;
-    background: no-repeat black;
-    
-      
+ #page-preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #000;
+    z-index: 100500;
+}
+
+#page-preloader .spinner {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    left: 35%;
+    top: 25%;
+    background: url("../icon/loaders.gif") no-repeat 50% 50%;
+    margin: -16px 0 0 -16px;
 }
 .video {
   position:relative;
