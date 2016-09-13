@@ -39,6 +39,7 @@ body{
 }
 
  .page{
+     position:absolute;
     display: -webkit-flex;
     display: flex;
     -webkit-flex-direction: column;
@@ -46,11 +47,11 @@ body{
     justify-content:center;
 	top: 0;
 	left: 0;
-	width: 100%;
+	width: auto;
 	height: 100%;
 	min-width: 100%; 
     min-height: 100%;
-    overflow:auto;
+    
     
  }
  .container{
