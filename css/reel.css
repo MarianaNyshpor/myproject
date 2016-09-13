@@ -2,6 +2,7 @@ body{
     width: 100%;
     height: auto; 
 	position: fixed;
+	margin:auto;
 	top: 0; right: 0; bottom: 0; left: 0;
     background: no-repeat black;
     
@@ -31,10 +32,10 @@ body{
     position: absolute;
     left: 35%;
     top: 25%;
-    background: url("../icon/loaders.gif") no-repeat 50% 50%;
+    background: url("../icon/loader.gif") no-repeat 50% 50%;
     margin: -16px 0 0 -16px;
 }
-.video {
+.videos {
   position:relative;
   display: -webkit-flex;
   display: flex;

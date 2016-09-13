@@ -103,13 +103,7 @@ font-weight:bold;
   justify-content:space-around;
   
 }
- #picture{
-     -webkit-flex:none;
-         flex:none;
-  width: 100px;
-  height: 100px;   
-     
- }
+ 
 .text{
   
   -webkit-flex: none;
@@ -154,9 +148,7 @@ a:hover {
     text-decoration: underline;
     color:#FEF0F0;
 }
-.red{
-    color:red;
-}
+
 .animation{
     height: 100px;
   width: 100px;

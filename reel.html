@@ -1,24 +1,26 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Ivan Nyshpor</title>
     <link rel="stylesheet" href="css/normalize.css">
     <link href="https://fonts.googleapis.com/css?family=Cinzel|Khand|Oswald|Rajdhani" rel="stylesheet">
-    <link rel="stylesheet" href="css/reel.css">
+    <link media='all and (max-width: 719px)' rel="stylesheet" href="css/mobile.css">
+    <link media='all and (min-width: 720px)' rel="stylesheet" href="css/reel.css">
+    
 </head>
  <body>
-  <div class="main">
+  
    <div class="video">
-     <video width="100%" height="auto" muted autoplay="autoplay" loop="loop" preload="auto" poster="">
+     <video width="100%" height="auto"  controls autoplay="autoplay" loop="loop" preload="auto" poster="">
       <source src="video.mp4" type="video/mp4"> </source>
        <source src=".webm" type="video/webm"></source>
         </video> 
        </div>
-     </div>
+    
   <div class="page">
    <nav class="container">
-   <div class="flex-item hvr-grow">Ivan Nyshpor</div>
+   <div class="flex-item"><a href="index.html" class="hvr-grow">Ivan Nyshpor</></div>
     <div class="flex-item1"><a href="index.html" class="hvr-grow">Home</a></div>
      <div class="flex-item2"><a href="about.html" class="hvr-grow">About</a></div>
       <div class="flex-item3"><a href="reel.html" class="hvr-grow">Reel</a></div>
@@ -28,15 +30,30 @@
      <p class="red"> </p>
     </div>
   <nav class="space-container">
-      <div class="flex-item"><a href="works.html" class="hvr-grow">See all works</a></div>
-       <div class="flex-item1"><a href="https://www.facebook.com/ivan.nyshpor" id="icon"><img src="icon/facebook-logo-button.png" width="50px"></a></div>
-        <div class="flex-item2"><a href="" id="icon"><img src="icon/twitter-logo-button.png" width="50px""></a></div>
-         <div class="flex-item3"><a href="" id="icon"><img src="icon/linkedin-logo-button.png" width="50px"></a></div>
-          <div class="flex-item4"><a href="" id="icon"><img src="icon/behance-logo-button.png" width="50px"></a></div>
-     </nav>
-  </div>
-  <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
-   
-    <script src="js/main.js"></script>
+                  <div class="flex-item">
+                      <a href="works.html" class="hvr-grow">See all works</a>
+                  </div>
+                  <div class="flex-item1">
+                      <a href="https://www.facebook.com/ivan.nyshpor">
+                          <img id="icon" src="icon/facebook-logo-button.png">
+                      </a>
+                  </div>
+                  <div class="flex-item2">
+                       <a href="https://twitter.com/i_nyshpor">
+                           <img id="icon" src="icon/twitter-logo-button.png">
+                       </a>
+                  </div>
+                  <div class="flex-item3">
+                       <a href="">
+                           <img id="icon" src="icon/linkedin-logo-button.png">
+                       </a>
+                  </div>
+                  <div class="flex-item4">
+                       <a href="https://www.behance.net/i_nyshpor">
+                           <img id="icon" src="icon/behance-logo-button.png">
+                       </a>
+                  </div>
+             </nav></div>
+  
  </body>
 </html>
